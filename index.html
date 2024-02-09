@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles/styles.min.css">
+
+  <title>Calculateur Temps de Travail</title>
+
+</head>
+
+<body>
+  <h1>Mes choix de plug-in : calculateur temps de travail et pop-up modal</h1>
+  <div class="wrapper">
+    <h2>Calculateur Temps de Travail</h2>
+    <label for="startTime">Heure de début :</label>
+    <input type="time" id="startTime">
+    <label for="endTime">Heure de fin :</label>
+    <input type="time" id="endTime">
+    <button id="calculateButton">Calculer</button>
+    <div id="result"></div>
+  </div>
+  <div class="recapwork">
+    <h4>Récapitulatif</h4>
+  </div>
+  <div class="container">
+        <a href="#" id="linkModal">Règlement interne</a>
+    </div>
+
+    <div id="modal" class="offmodal">
+        <div class="modal-container">
+            <header>
+                <h2> Heures supplémentaires volontaires </h2>
+                <span class="close">
+                    <a href="#">X</a>
+                </span>
+            </header>
+            <div class="modal-body">
+                <p>Actuellement la loi du 16 mars 1971 prévoir que l’on puisse faire prester des heures supplémentaires : afin de faire face à un surcroît extraordinaire de travail,  ou un cas de force majeure (nécessité imprévue, accident survenu ou imminent, travaux urgents aux machines et au matériel).
+
+                  Ces heures supplémentaires ne peuvent s’effectuer que si l’employeur accomplit certaines formalités (autorisation préalable ou information). Elles permettent de dépasser les limites du temps de travail sans toutefois aller au-delà de 11 heures par jour ou 50 heures par semaine.
+                  
+                  En principe ces heures donnent lieu à paiement d’un sursalaire et à un repos compensatoire afin de respecter la durée moyenne du temps de travail.
+                  
+                  Un nouveau type d’heures supplémentaires  dites « volontaires » est inséré dans la loi du 16 mars 1971 sur le travail. L’article  25bis nouveau permet au travailleur qui en fait la demande de prester un quota d’heures supplémentaires et ainsi compléter sa rémunération.
+                  
+                  Afin de se porter volontaire pour ces heures supplémentaires, le travailleur doit,  préalablement à la prestation de ces heures, conclure un accord écrit avec son employeur. Cet accord est valable six mois et peut être renouvelé dans la mesure où le travailleur souhaite toujours se porter volontaire.
+                  
+                  Une fois cet accord passé, l’employeur pourra demander à ce travailleur de prester des heures supplémentaires en cas de besoin. Ces heures supplémentaires ne doivent pas nécessairement être motivées par un surcroît extraordinaire de travail ou un cas de force majeure et ne doivent pas respecter une procédure particulière comme cela est le cas pour les autres heures supplémentaires. La limite maximale de 11 heures par jour et 50 heures par semaine ne pourra pas être dépassée.
+
+                  Le travailleur pourra  prester jusqu’à 100 heures supplémentaires  sur l’année qui donneront lieu au paiement du sursalaire habituel, 50% pour les heures prestées en semaine et 100% pour les heures prestées le dimanche et les jours fériés, mais ne donneront pas lieu à récupération.
+                  
+                  Le quota de 100 heures supplémentaires pourra être augmenté par une convention collective de travail sectorielle rendue obligatoire par arrêté royal, l’augmentation ne pourra toutefois pas dépasser 360 heures par année civile.
+                  
+                  Entrée en vigueur : 1er février 2017 
+                  
+                  Source : Loi du 5 mars 2017 concernant le travail faisable et maniable, art. 4 et 7.</p>
+            </div>
+        </div>
+    </div>
+
+  
+
+  <script src="scripts/main.js"></script>
+</body>
+
+  
+
+</html>

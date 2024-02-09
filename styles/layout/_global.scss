@@ -1,0 +1,136 @@
+body{
+  text-align: center;
+  margin-top: 50px;
+  }
+.wrapper,.recapwork{
+  max-width:1000px;
+  margin: 100px auto;
+  background:#fff;
+  padding:50px;
+  background-color: pink;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;
+}
+button{
+  padding: 8px;
+  border: 0;
+  background-color: white;
+  border-radius: 5px;
+  
+}
+
+.recapwork{
+background-color: rgb(168, 165, 165);
+width: 700px;
+padding: 15px;
+}
+
+
+// pour le pop-up
+
+.offmodal{
+  display: none;
+  transition: display 1s ease-in-out;
+}
+
+.onmodal{
+  display: block;
+  transition: display 1s ease-in-out;
+}
+
+#modal::before{
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(131, 130, 130, 0.479);    
+  user-select: none;
+}
+
+.modal-container{
+  border: 1px solid darkgray;
+  width: 85%;
+  height: auto;
+  margin: auto;
+  background-color: red;
+  position: fixed;
+  /* top: 20%;
+  left: 8%; */
+  z-index: 2;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  box-shadow:0px 2px 6px rgba(0,0,0,1);
+  font-size: .8rem;
+}
+
+.modal-container header{
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-container h2{
+  margin: 15px;
+}
+
+.modal-body{
+  padding: 5px;
+}
+
+.close{
+  text-align: center;
+  width: 50px;
+  background-color: lightgray;
+}
+
+.close > a{
+  display: block;
+  text-decoration: none;
+  font-size: xx-large;
+  padding: 8px;
+}
+
+.close > a:hover{
+  color: red;
+}
+
+
+@media only screen and (min-width: 700px)
+{
+  .modal-container{
+      width: 75%;
+      font-size: 1rem;
+      /* top: 20%;
+      left: 12%; */
+  }
+  
+}
+
+@media only screen and (min-width: 992px)
+{
+  .modal-container{
+      width: 65%;
+      font-size: 1rem;
+      /* top: 35%;
+      left: 20%; */
+  }
+}
+
+/* @media only screen and (min-width: 1200px){
+  .modal-container{
+      width: 55%;
+      font-size: 1rem;
+  }
+} */
+
